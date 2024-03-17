@@ -1,3 +1,6 @@
+/* FONTS */
+@import "fonts.css";
+
 /* COMPONENTS */
 @import "../../components/upperHeader/upperHeader.css";
 @import "../../components/header/header.css";
