@@ -1,0 +1,34 @@
+.works {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.works__absoluteText {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  right: -100px;
+  top: 132px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}

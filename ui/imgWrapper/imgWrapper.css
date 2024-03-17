@@ -1,0 +1,45 @@
+.imgWrapper {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.imgWrapper:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #ECECEC;
+  top: -12px;
+  left: -12px;
+}
+
+.imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px) {
+  .imgWrapper:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}

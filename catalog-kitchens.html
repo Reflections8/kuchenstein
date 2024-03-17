@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+		<!-- Encoding -->
+		<meta charset="UTF-8">
+
+		<!-- Language -->
+		<meta http-equiv="content-language" content="ru"/>
+
+		<!-- Author -->
+		<meta name="author" content="Ruslan Feduleyev">
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Title/Description -->
+		<title>Kuchenstein</title>
+		<meta name="description" content="Кухни премиум-класса"/>
+
+		<!-- Bootstrap CDN -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+					integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+		<!-- normalize.css -->
+		<link rel="stylesheet" href="assets/css/normalize.css">
+
+		<!-- Global CSS file -->
+		<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- components/upperHeader -->
+<div class="upperHeaderWrapper">
+		<div class="container">
+				<div class="upperHeader">
+						<div class="upperHeader__text">
+								г.Москва, Центр Дизайна «Румянцево», 3-й этаж
+						</div>
+
+						<div class="upperHeader__info">
+								<a href="tel:+7 (919) 766-75-16" class="link link--white upperHeader__info-mobileLink">
+										+7 (919) 766-75-16
+								</a>
+								<button class="button button--white upperHeader__info-requestBtn"
+												data-button-event="callModal">
+										Заказать звонок
+								</button>
+						</div>
+				</div>
+		</div>
+</div>
+
+<!-- components/header -->
+<header class="headerWrapper">
+		<div class="container">
+				<div class="header">
+
+						<img src="components/header/img/logo.svg"
+								 alt="kuchenstein"
+								 class="header__logo">
+
+						<!-- nav -->
+						<nav class="header__nav">
+								<a href="#" class="link header__nav-link">Кухни</a>
+								<a href="#" class="link header__nav-link">Шкафы</a>
+								<a href="#" class="link header__nav-link">Столешницы</a>
+								<a href="#" class="link header__nav-link">Техника</a>
+								<a href="#" class="link header__nav-link">Выполненные проекты</a>
+								<a href="#" class="link header__nav-link">О компании</a>
+								<a href="#" class="link header__nav-link">Контакты</a>
+						</nav>
+
+						<button class="header__burgerIconWrapper">
+								<img src="ui/burgerMenu/img/dots.svg"
+										 alt="burger menu"
+										 class="header__burgerIconWrapper__icon"
+										 data-burger-icon="open">
+								<img src="ui/burgerMenu/img/close.svg"
+										 alt="burger menu"
+										 class="header__burgerIconWrapper__icon d-none"
+										 data-burger-icon="close">
+						</button>
+				</div>
+		</div>
+
+		<!-- ui/burgerMenu -->
+		<div class="burgerMenuBg hidden"></div>
+		<div class="headerWrapper__burgerMenu burgerMenu hidden">
+				<nav class="burgerMenu__nav">
+						<a href="#" class="link burgerMenu__nav-link">Кухни</a>
+						<a href="#" class="link burgerMenu__nav-link">Шкафы</a>
+						<a href="#" class="link burgerMenu__nav-link">Столешницы</a>
+						<a href="#" class="link burgerMenu__nav-link">Техника</a>
+						<a href="#" class="link burgerMenu__nav-link">Выполненные проекты</a>
+						<a href="#" class="link burgerMenu__nav-link">О компании</a>
+						<a href="#" class="link burgerMenu__nav-link">Контакты</a>
+				</nav>
+
+				<div class="burgerMenu__contacts">
+						<a href="tel:+7 (919) 766-75-16" class="link burgerMenu__contacts__phone">+7 (919) 766-75-16</a>
+						<div class="burgerMenu__contacts__address">
+								г.Москва, Центр Дизайна «Румянцево», 3-й этаж
+						</div>
+
+				</div>
+
+		</div>
+</header>
+
+<main>
+
+		<section class="catalogPageWrapper">
+				<div class="container">
+						<div class="catalogPage">
+
+								<!-- ui/pageTitle -->
+								<div class="pageTitleWrapper">
+										<div class="container">
+												<div class="pageTitle">
+														<div class="pageTitle__breadcrumbs">
+																<a href="index.html" class="pageTitle__breadcrumbs-link">KuchenStein</a>
+														</div>
+														<h1 class="pageTitle__h1">
+																Кухни
+														</h1>
+												</div>
+										</div>
+								</div>
+
+								<!-- ui/filters -->
+								<div class="filtersWrapper">
+										<div class="container">
+												<div class="filters">
+
+														<!-- ui/sectionTitle -->
+														<div class="sectionTitle sectionTitle--marginBottom filters__title">
+																<div class="sectionTitle__main">
+																		<div class="sectionTitle__main-suptitle">
+																				Готовые проекты
+																		</div>
+																		<h2 class="sectionTitle__main-title">
+																				Каталог кухонь
+																		</h2>
+																</div>
+														</div>
+
+														<div class="filters__content">
+																<!-- radio -->
+																<div class="form-check filters__content-item">
+																		<input class="form-check-input" type="radio" name="flexRadioDefault"
+																					 id="flexRadioDefault1"
+																					 checked>
+																		<label class="form-check-label" for="flexRadioDefault1">
+																				Классика
+																		</label>
+																</div>
+
+																<!-- radio -->
+																<div class="form-check filters__content-item">
+																		<input class="form-check-input" type="radio" name="flexRadioDefault"
+																					 id="flexRadioDefault2"
+																		>
+																		<label class="form-check-label" for="flexRadioDefault2">
+																				Классика
+																		</label>
+																</div>
+
+																<!-- radio -->
+																<div class="form-check filters__content-item">
+																		<input class="form-check-input" type="radio" name="flexRadioDefault"
+																					 id="flexRadioDefault3"
+																		>
+																		<label class="form-check-label" for="flexRadioDefault3">
+																				Классика
+																		</label>
+																</div>
+
+																<!-- radio -->
+																<div class="form-check filters__content-item">
+																		<input class="form-check-input" type="radio" name="flexRadioDefault"
+																					 id="flexRadioDefault4"
+																		>
+																		<label class="form-check-label" for="flexRadioDefault4">
+																				Классика
+																		</label>
+																</div>
+
+																<!-- radio -->
+																<div class="form-check filters__content-item">
+																		<input class="form-check-input" type="radio" name="flexRadioDefault"
+																					 id="flexRadioDefault5"
+																		>
+																		<label class="form-check-label" for="flexRadioDefault5">
+																				Классика
+																		</label>
+																</div>
+
+																<!-- radio -->
+																<div class="form-check filters__content-item">
+																		<input class="form-check-input" type="radio" name="flexRadioDefault"
+																					 id="flexRadioDefault6"
+																		>
+																		<label class="form-check-label" for="flexRadioDefault6">
+																				Классика
+																		</label>
+																</div>
+														</div>
+
+												</div>
+										</div>
+								</div>
+
+								<!-- ui/catalogGrid -->
+								<div class="catalogGridWrapper">
+										<div class="catalogGrid">
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+
+												<!-- ui/carditem -->
+												<div class="carditem works__grid-card">
+
+														<!-- ui/imgWrapper -->
+														<div class="imgWrapper works__grid-card-imgWrapper">
+																<img src="assets/images/project.jpg"
+																		 alt="project"
+																		 class="carditem__img">
+														</div>
+
+														<div class="carditem__info">
+																<div class="carditem__info-text">
+																		<div class="carditem__info-text-title">
+																				Розалинд
+																		</div>
+																		<div class="carditem__info-text-price">
+																				от 80 000 руб. /пм
+																		</div>
+																</div>
+
+																<!-- ui/linkArrow -->
+																<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																		<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+																</a>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</section>
+
+		<!-- components/feedback -->
+		<section class="feedbackWrapper">
+				<div class="container">
+						<div class="feedback">
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle feedback__title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Сложности с выбором?
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Получите консультацию!
+												</h2>
+										</div>
+								</div>
+
+								<!-- ui/form -->
+								<form action="#" class="form feedback__form" name="form--feedback">
+
+										<div class="form__inputSection">
+												<!-- phone number -->
+												<input type="text"
+															 class="form__inputSection-input"
+															 placeholder="+7 (___) ___-__-__"
+															 data-input-type="phone">
+
+												<!-- name -->
+												<input type="text"
+															 class="form__inputSection-input"
+															 placeholder="Ваше имя">
+										</div>
+
+										<div class="form__submitSection">
+												<button type="submit" class="button form__submitSection-btn">
+														<!-- ui/linkArrow -->
+														<a class="link linkArrow linkArrow--gold form__submitSection-btn-link">
+															<span class="linkArrow__text">
+																отправить заявку
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</button>
+
+												<div class="form__submitSection-text">
+														Нажимая “Отправить заявку”, Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+														сайта.
+												</div>
+										</div>
+								</form>
+						</div>
+				</div>
+		</section>
+
+		<!-- components/howTo -->
+		<section class="howToWrapper">
+				<div class="container">
+						<div class="howTo">
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle sectionTitle--marginBottom howTo__title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Информация
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Как выбрать кухню
+												</h2>
+										</div>
+								</div>
+
+								<div class="howTo__text">
+										<p class="howTo__text-p">
+												Lorem ipsum dolor sit amet consectetur. Etiam tristique ipsum ac sed. Id facilisis risus
+												ultrices amet massa interdum vitae integer. Lectus facilisis tortor suscipit in. Et turpis ut
+												ipsum hendrerit nullam pellentesque a. Velit turpis duis massa donec viverra nulla lorem
+												commodo. Tellus cursus pulvinar interdum curabitur vestibulum. Scelerisque viverra neque sit
+												urna tellus molestie congue elit. Nec ullamcorper tincidunt gravida in porta habitasse nulla.
+												Viverra aliquet non odio sit morbi vestibulum dolor tempor ipsum. Vitae dignissim convallis erat
+												purus in odio ligula tempor. Orci odio cursus egestas orci tempor vivamus fringilla. Cursus
+												netus est nibh sit lectus diam mi leo. Egestas egestas faucibus lacus eu urna mauris diam in
+												parturient.
+										</p>
+
+										<p class="howTo__text-p">
+												Bibendum vestibulum ultricies aenean eu vestibulum scelerisque at in vivamus. Quam id consequat
+												sed at. Proin adipiscing odio quam sodales a vulputate. Quam fermentum lectus non nunc duis
+												imperdiet nunc est. Neque cras ac vitae magna neque aliquet fringilla vel cras. Sit non mi
+												mattis neque arcu ut egestas vulputate. Eget enim facilisis arcu vel etiam est fermentum velit.
+												Nunc nulla id nec mattis bibendum vitae. In fames ultrices sapien cras sit gravida risus viverra
+												massa. Ut velit dui nibh congue nisi et commodo sit. Neque turpis adipiscing mi elit at aenean
+												sit.
+										</p>
+
+										<p class="howTo__text-p bold">
+												Cras eget orci in feugiat facilisis consectetur ac ullamcorper. Mi pulvinar et purus sit
+												bibendum ornare. Elementum ut morbi viverra fringilla leo eget vitae. Tortor scelerisque
+												semper phasellus amet commodo enim enim semper. Turpis facilisi commodo aliquam velit mattis
+												urna ipsum massa. Et enim ultricies neque sodales eros est sit elit facilisi. Amet
+												consectetur neque faucibus lobortis sagittis massa.
+										</p>
+								</div>
+
+						</div>
+				</div>
+		</section>
+
+		<!-- components/benefits -->
+		<section class="benefitsWrapper">
+				<div class="container">
+						<div class="benefits">
+
+								<!-- absoluteText -->
+								<div class="absoluteText benefits__absoluteText">
+										Лучший выбор
+								</div>
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle sectionTitle--marginBottom benefits__title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Преимущества
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Почему выбирают нас?
+												</h2>
+										</div>
+								</div>
+
+								<!-- content -->
+								<div class="benefits__content">
+										<!-- item -->
+										<div class="benefits__content-item">
+												<img src="components/benefits/img/1.svg"
+														 alt="benefit"
+														 class="benefits__content-item-img">
+
+												<div class="benefits__content-item-info">
+														<div class="benefits__content-item-info-title">
+																Все декоры Egger и Kronospan
+														</div>
+														<div class="benefits__content-item-info-text">
+																Уникальные кухни и мебель на заказ с декорами Egger и Kronospan.
+														</div>
+												</div>
+										</div>
+
+										<!-- item -->
+										<div class="benefits__content-item">
+												<img src="components/benefits/img/2.svg"
+														 alt="benefit"
+														 class="benefits__content-item-img">
+
+												<div class="benefits__content-item-info">
+														<div class="benefits__content-item-info-title">
+																Эксклюзивные условия поставки
+														</div>
+														<div class="benefits__content-item-info-text">
+																Эксклюзивные условия поставки гарантируют надежность и выгоду для каждого клиента.
+														</div>
+												</div>
+										</div>
+
+										<!-- item -->
+										<div class="benefits__content-item">
+												<img src="components/benefits/img/3.svg"
+														 alt="benefit"
+														 class="benefits__content-item-img">
+
+												<div class="benefits__content-item-info">
+														<div class="benefits__content-item-info-title">
+																Лазерная кромка
+														</div>
+														<div class="benefits__content-item-info-text">
+																Совершенная кромка с лазерной точностью для вашей мебели и кухни.
+														</div>
+												</div>
+										</div>
+
+										<!-- item -->
+										<div class="benefits__content-item">
+												<img src="components/benefits/img/4.svg"
+														 alt="benefit"
+														 class="benefits__content-item-img">
+
+												<div class="benefits__content-item-info">
+														<div class="benefits__content-item-info-title">
+																Нетиповые корпуса
+														</div>
+														<div class="benefits__content-item-info-text">
+																Индивидуальные корпуса, созданные под ваши уникальные потребности.
+														</div>
+												</div>
+										</div>
+
+								</div>
+
+						</div>
+				</div>
+		</section>
+
+		<!-- components/steps -->
+		<section class="stepsWrapper">
+				<div class="container">
+						<div class="steps">
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle sectionTitle--marginBottom steps__title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Как мы работаем
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Качество на каждом этапе
+												</h2>
+										</div>
+								</div>
+
+								<!-- content -->
+								<div class="steps__content">
+
+										<!-- 1 item -->
+										<div class="steps__content-item">
+												<div class="imgWrapper steps__content-item-imgWrapper">
+														<img src="components/steps/img/1.jpg"
+																 alt="project"
+																 class="steps__content-item-imgWrapper-img">
+												</div>
+
+												<div class="steps__content-item-info">
+														<div class="steps__content-item-info-index">
+																01.
+														</div>
+
+														<div class="steps__content-item-info-text">
+																<div class="steps__content-item-info-text-title">
+																		Разрабатываем проект
+																</div>
+																<div class="steps__content-item-info-text-description">
+																		Определяем основные предпочтения Вашей будущей кухни, выполняем быстрый расчет
+																		проекта и даем рекомендации по электрике и сантехнике.
+																</div>
+														</div>
+
+														<!-- ui/linkArrow -->
+														<a class="link linkArrow linkArrow--gray steps__content-item-info-linkArrow"
+															 data-button-event="callModal">
+																<span class="linkArrow__text">
+																	заказать проект
+																</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																		<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																					fill="#333333"/>
+																	</svg>
+												</span>
+														</a>
+												</div>
+										</div>
+
+										<!-- 2 item -->
+										<div class="steps__content-item">
+												<div class="imgWrapper steps__content-item-imgWrapper">
+														<img src="components/steps/img/1.jpg"
+																 alt="project"
+																 class="steps__content-item-imgWrapper-img">
+												</div>
+
+												<div class="steps__content-item-info">
+														<div class="steps__content-item-info-index">
+																02.
+														</div>
+
+														<div class="steps__content-item-info-text">
+																<div class="steps__content-item-info-text-title">
+																		Проводим замеры
+																</div>
+																<div class="steps__content-item-info-text-description">
+																		Отправляем к Вам специалиста для замера помещения и определения необходимых
+																		корректировок в конструкцию будущей кухни.
+																</div>
+														</div>
+												</div>
+										</div>
+
+										<!-- 3 item -->
+										<div class="steps__content-item">
+												<div class="imgWrapper steps__content-item-imgWrapper">
+														<img src="components/steps/img/1.jpg"
+																 alt="project"
+																 class="steps__content-item-imgWrapper-img">
+												</div>
+
+												<div class="steps__content-item-info">
+														<div class="steps__content-item-info-index">
+																03.
+														</div>
+
+														<div class="steps__content-item-info-text">
+																<div class="steps__content-item-info-text-title">
+																		Составляем документацию
+																</div>
+																<div class="steps__content-item-info-text-description">
+																		Окончательное согласование конструкции и наполнения будущей кухни «на бумаге» и
+																		подписание договора.
+																</div>
+														</div>
+												</div>
+										</div>
+
+										<!-- 4 item -->
+										<div class="steps__content-item">
+
+												<!-- absoluteText -->
+												<div class="absoluteText steps__content-item-absoluteText">
+														Качественно
+												</div>
+
+												<div class="imgWrapper steps__content-item-imgWrapper">
+														<img src="components/steps/img/1.jpg"
+																 alt="project"
+																 class="steps__content-item-imgWrapper-img">
+												</div>
+
+												<div class="steps__content-item-info">
+														<div class="steps__content-item-info-index">
+																04.
+														</div>
+
+														<div class="steps__content-item-info-text">
+																<div class="steps__content-item-info-text-title">
+																		Производим изделие
+																</div>
+																<div class="steps__content-item-info-text-description">
+																		Пилим, фрезеруем, кромим и красим в объективные сроки
+																</div>
+														</div>
+												</div>
+										</div>
+
+										<!-- 5 item -->
+										<div class="steps__content-item">
+												<div class="imgWrapper steps__content-item-imgWrapper">
+														<img src="components/steps/img/1.jpg"
+																 alt="project"
+																 class="steps__content-item-imgWrapper-img">
+												</div>
+
+												<div class="steps__content-item-info">
+														<div class="steps__content-item-info-index">
+																05.
+														</div>
+
+														<div class="steps__content-item-info-text">
+																<div class="steps__content-item-info-text-title">
+																		Привозим, устанавливаем и презентуем
+																</div>
+																<div class="steps__content-item-info-text-description">
+																		Заключительный этап, на котором мы аккуратно доставляем, осуществляем монтаж под
+																		личным контролем руководителя, убираем за собой мусор и демонстрируем Вам все
+																		возможности новой кухни
+																</div>
+														</div>
+
+														<!-- ui/linkArrow -->
+														<a class="link linkArrow linkArrow--gray steps__content-item-info-linkArrow"
+															 data-button-event="callModal">
+																<span class="linkArrow__text">
+																	хочу проект
+																</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																		<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																					fill="#333333"/>
+																	</svg>
+												</span>
+														</a>
+												</div>
+										</div>
+								</div>
+
+						</div>
+				</div>
+		</section>
+
+</main>
+
+<footer class="footerWrapper">
+		<div class="container">
+				<div class="footer">
+
+						<div class="footer__block footer__contacts">
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle sectionTitle--small sectionTitle--marginBottom footer__contacts-title footer__block-title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Контакты
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Мы на связи 24/7
+												</h2>
+										</div>
+								</div>
+
+								<div class="footer__contacts-info">
+										<div class="footer__contacts-info-block">
+												<div class="footer__contacts-info-block-key">
+														Отдел продаж
+												</div>
+												<a href="tel:+7 (919) 766-75-16" class="link link--white footer__contacts-info-block-value">
+														+7 (919) 766-75-16
+												</a>
+										</div>
+
+										<div class="footer__contacts-info-block">
+												<div class="footer__contacts-info-block-key">
+														Контактный E-Mail
+												</div>
+												<a href="mailto:info@kuchenstein.ru" class="link link--white footer__contacts-info-block-value">
+														info@kuchenstein.ru
+												</a>
+										</div>
+								</div>
+
+								<div class="footer__contacts-text">
+										35-й километр Киевского шоссе, Центр Дизайна Румянцево, корпус В, 3-й этаж
+								</div>
+
+						</div>
+
+
+						<div class="footer__block footer__formSection">
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle sectionTitle--marginBottom footer__form-title footer__block-title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Сложности с выбором?
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Получите консультацию
+												</h2>
+										</div>
+								</div>
+
+								<!-- ui/form -->
+								<form action="#" class="form footer__formSection-form" name="form--footer">
+
+										<div class="form__inputSection">
+												<!-- phone number -->
+												<input type="text"
+															 class="form__inputSection-input"
+															 placeholder="+7 (___) ___-__-__"
+															 data-input-type="phone">
+
+												<!-- name -->
+												<input type="text"
+															 class="form__inputSection-input"
+															 placeholder="Ваше имя">
+										</div>
+
+										<div class="form__submitSection">
+												<button type="submit" class="button form__submitSection-btn">
+														<!-- ui/linkArrow -->
+														<a class="link linkArrow linkArrow--gold form__submitSection-btn-link">
+															<span class="linkArrow__text">
+																отправить заявку
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</button>
+
+												<div class="form__submitSection-text">
+														Нажимая “Отправить заявку”, Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+														сайта.
+												</div>
+										</div>
+								</form>
+
+						</div>
+				</div>
+
+				<div class="footerBottom">
+						<img src="components/footer/img/logo.svg"
+								 alt="kuchenstein_logo"
+								 class="footerBottom__logo">
+
+						<div class="footerBottom__info">
+								<nav class="footerBottom__info-nav">
+										<a href="#" class="link footerBottom__info-nav-link">Кухни</a>
+										<a href="#" class="link footerBottom__info-nav-link">Шкафы</a>
+										<a href="#" class="link footerBottom__info-nav-link">Столешницы</a>
+										<a href="#" class="link footerBottom__info-nav-link">Техника</a>
+										<a href="#" class="link footerBottom__info-nav-link">Выполненные проекты</a>
+										<a href="#" class="link footerBottom__info-nav-link">О компании</a>
+										<a href="#" class="link footerBottom__info-nav-link">Контакты</a>
+								</nav>
+
+								<button class="button button--white upperHeader__info-requestBtn"
+												data-button-event="callModal">
+										Заказать звонок
+								</button>
+						</div>
+				</div>
+		</div>
+</footer>
+
+<!-- components/callModal -->
+<div class="callModalBg callModalBg--Hidden">
+		<div class="callModal">
+				<img src="components/callModal/img/closeIcon.svg"
+						 alt="closeIcon"
+						 class="callModal__closeIcon">
+
+				<!-- ui/sectionTitle -->
+				<div class="sectionTitle sectionTitle--small sectionTitle--marginBottom callModal__title">
+						<div class="sectionTitle__main">
+								<div class="sectionTitle__main-suptitle">
+										Обратный звонок
+								</div>
+								<h2 class="sectionTitle__main-title">
+										Оставьте заявку и мы вам перезвоним!
+								</h2>
+						</div>
+				</div>
+
+				<!-- ui/form -->
+				<form action="#" class="form callModal__form" name="form--callModal">
+
+						<div class="form__inputSection">
+								<!-- phone number -->
+								<input type="text"
+											 class="form__inputSection-input"
+											 placeholder="+7 (___) ___-__-__"
+											 data-input-type="phone">
+
+								<!-- name -->
+								<input type="text"
+											 class="form__inputSection-input"
+											 placeholder="Ваше имя">
+						</div>
+
+						<div class="form__submitSection">
+								<button type="submit" class="button form__submitSection-btn">
+										<!-- ui/linkArrow -->
+										<a class="link linkArrow linkArrow--gold form__submitSection-btn-link">
+															<span class="linkArrow__text">
+																отправить заявку
+															</span>
+
+												<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+										</a>
+								</button>
+
+								<div class="form__submitSection-text">
+										Нажимая “Отправить заявку”, Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+										сайта.
+								</div>
+						</div>
+				</form>
+		</div>
+</div>
+
+<!-- Bootstrap CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+				crossorigin="anonymous"></script>
+
+<!-- Global script -->
+<script src="assets/js/index.js"></script>
+
+<!-- Component scripts -->
+<script src="components/header/header.js"></script>
+<script src="components/callModal/callModal.js"></script>
+
+<!-- UI scripts -->
+<script src="ui/form/form.js"></script>
+</body>
+</html>

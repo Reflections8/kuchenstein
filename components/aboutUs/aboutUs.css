@@ -1,0 +1,157 @@
+.aboutUs {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.aboutUs:after {
+  position: absolute;
+}
+
+.aboutUs__imgSection {
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutUs__imgSection:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ECECEC;
+  left: -40px;
+  top: 40px;
+  z-index: -1;
+}
+
+.aboutUs__contentSection {
+  margin-top: 24px;
+  background-color: #fff;
+  width: 100%;
+  padding: 24px 24px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.aboutUs__contentSection-absoluteText {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 700;
+  color: #ECECEC;
+  bottom: 40px;
+}
+
+.aboutUs__contentSection-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.aboutUs__contentSection-text--simple {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.aboutUs__contentSection-link {
+  align-self: flex-end;
+}
+
+.aboutUs__contentSection-link--page {
+  margin-left: auto;
+}
+
+/* Mission variant */
+.aboutUs__contentSection-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.aboutUs__contentSection-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.aboutUs__contentSection-author {
+  margin-left: auto;
+  color: #909090;
+  font-size: 14px;
+}
+
+.aboutUs__contentSection-absoluteText--ourMission {
+  bottom: -35px;
+  left: 520px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px) {
+  .aboutUs__imgSection {
+    display: none;
+  }
+
+  .aboutUs--page {
+    flex-direction: column;
+  }
+
+  .aboutUs--page .aboutUs__imgSection {
+    max-width: unset;
+  }
+
+  .aboutUs--page .aboutUs__imgSection:before {
+    display: none;
+  }
+
+  .aboutUs--page .aboutUs__imgSection img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 440px;
+    object-position: 50% 20%;
+  }
+
+  .aboutUs__imgSection--page {
+    display: block;
+  }
+
+  .aboutUs--page .aboutUs__contentSection-info {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .aboutUs--page .aboutUs__contentSection-info-quotesIcon {
+    max-width: 32px;
+  }
+
+  .aboutUs__contentSection {
+    gap: 16px;
+    margin-top: 0;
+    padding: 16px;
+  }
+
+  .aboutUs__contentSection-link {
+    align-self: flex-start;
+  }
+
+  .aboutUs__contentSection-author {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}

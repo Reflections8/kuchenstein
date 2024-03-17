@@ -1,0 +1,109 @@
+.linkArrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.linkArrow--big {
+  font-size: 16px;
+}
+
+.linkArrow--big .linkArrow__text {
+  font-weight: 600;
+}
+
+.linkArrow--gray, .linkArrow--gray > * {
+  transition: all .2s ease-in-out;
+}
+
+.linkArrow__arrowWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  width: 28px;
+  transition: all .2s ease-in-out;
+}
+
+.linkArrow__arrowWrapper-svg {
+  min-width: 36px;
+  transition: all .2s ease-in-out;
+}
+
+.linkArrow__arrowWrapper-svg path {
+  transition: all .2s ease-in-out;
+}
+
+.linkArrow:hover .linkArrow__arrowWrapper {
+  width: 36px;
+}
+
+/* COLORS */
+/* gray*/
+.linkArrow--gray, .linkArrow--gray > *, .linkArrow--gray .linkArrow__arrowWrapper-svg path {
+  color: #909090;
+  fill: #909090;
+}
+
+.linkArrow--gray:hover .linkArrow__text {
+  color: #333333;
+}
+
+.linkArrow--gray:hover .linkArrow__arrowWrapper-svg path {
+  fill: #333333;
+}
+
+/* black */
+.linkArrow--black, .linkArrow--black > *, .linkArrow__arrowWrapper-svg path {
+  color: #333333;
+  fill: #333333;
+}
+
+.linkArrow--black:hover {
+  color: #5C5C5C;
+}
+
+.linkArrow--black:hover .linkArrow__text {
+  color: #5C5C5C;
+}
+
+.linkArrow--black:hover .linkArrow__arrowWrapper-svg path {
+  fill: #5C5C5C;
+}
+
+/* gold */
+.linkArrow--gold, .linkArrow--gold > *, .linkArrow__arrowWrapper-svg path {
+  color: #CFAF6C;
+  fill: #CFAF6C;
+}
+
+.linkArrow--gold:hover .linkArrow__text {
+  color: #DEC799;
+}
+
+.linkArrow--gold:hover .linkArrow__arrowWrapper-svg path {
+  fill: #DEC799;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}

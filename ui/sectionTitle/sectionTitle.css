@@ -1,0 +1,87 @@
+.sectionTitle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.sectionTitle--small .sectionTitle__main-title {
+  font-size: 20px;
+}
+
+.sectionTitle--marginBottom {
+  margin-bottom: 40px;
+}
+
+.sectionTitle__main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectionTitle__main-suptitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #CFAF6C;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sectionTitle__main-suptitle:before {
+  content: "";
+  display: block;
+  width: 80px;
+  border-bottom: 3px solid #CFAF6C;
+  margin-top: 1px;
+}
+
+.sectionTitle__main-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sectionTitle__main-title--initialText {
+  text-transform: initial;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px) {
+  .sectionTitle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .sectionTitle__main {
+    gap: 4px;
+  }
+
+  .sectionTitle__main-suptitle {
+    font-size: 14px;
+  }
+
+  .sectionTitle__main-title {
+    font-size: 20px;
+  }
+
+  .sectionTitle--marginBottom {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}

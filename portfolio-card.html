@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+		<!-- Encoding -->
+		<meta charset="UTF-8">
+
+		<!-- Language -->
+		<meta http-equiv="content-language" content="ru"/>
+
+		<!-- Author -->
+		<meta name="author" content="Ruslan Feduleyev">
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Title/Description -->
+		<title>Kuchenstein</title>
+		<meta name="description" content="Кухни премиум-класса"/>
+
+		<!-- Bootstrap CDN -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+					integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+		<!-- SlickSlider CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+					integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+					crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+					integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+					crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+		<!-- normalize.css -->
+		<link rel="stylesheet" href="assets/css/normalize.css">
+
+		<!-- Global CSS file -->
+		<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- components/upperHeader -->
+<div class="upperHeaderWrapper">
+		<div class="container">
+				<div class="upperHeader">
+						<div class="upperHeader__text">
+								г.Москва, Центр Дизайна «Румянцево», 3-й этаж
+						</div>
+
+						<div class="upperHeader__info">
+								<a href="tel:+7 (919) 766-75-16" class="link link--white upperHeader__info-mobileLink">
+										+7 (919) 766-75-16
+								</a>
+								<button class="button button--white upperHeader__info-requestBtn"
+												data-button-event="callModal">
+										Заказать звонок
+								</button>
+						</div>
+				</div>
+		</div>
+</div>
+
+<!-- components/header -->
+<header class="headerWrapper">
+		<div class="container">
+				<div class="header">
+
+						<img src="components/header/img/logo.svg"
+								 alt="kuchenstein"
+								 class="header__logo">
+
+						<!-- nav -->
+						<nav class="header__nav">
+								<a href="#" class="link header__nav-link">Кухни</a>
+								<a href="#" class="link header__nav-link">Шкафы</a>
+								<a href="#" class="link header__nav-link">Столешницы</a>
+								<a href="#" class="link header__nav-link">Техника</a>
+								<a href="#" class="link header__nav-link">Выполненные проекты</a>
+								<a href="#" class="link header__nav-link">О компании</a>
+								<a href="#" class="link header__nav-link">Контакты</a>
+						</nav>
+
+						<button class="header__burgerIconWrapper">
+								<img src="ui/burgerMenu/img/dots.svg"
+										 alt="burger menu"
+										 class="header__burgerIconWrapper__icon"
+										 data-burger-icon="open">
+								<img src="ui/burgerMenu/img/close.svg"
+										 alt="burger menu"
+										 class="header__burgerIconWrapper__icon d-none"
+										 data-burger-icon="close">
+						</button>
+				</div>
+		</div>
+
+		<!-- ui/burgerMenu -->
+		<div class="burgerMenuBg hidden"></div>
+		<div class="headerWrapper__burgerMenu burgerMenu hidden">
+				<nav class="burgerMenu__nav">
+						<a href="#" class="link burgerMenu__nav-link">Кухни</a>
+						<a href="#" class="link burgerMenu__nav-link">Шкафы</a>
+						<a href="#" class="link burgerMenu__nav-link">Столешницы</a>
+						<a href="#" class="link burgerMenu__nav-link">Техника</a>
+						<a href="#" class="link burgerMenu__nav-link">Выполненные проекты</a>
+						<a href="#" class="link burgerMenu__nav-link">О компании</a>
+						<a href="#" class="link burgerMenu__nav-link">Контакты</a>
+				</nav>
+
+				<div class="burgerMenu__contacts">
+						<a href="tel:+7 (919) 766-75-16" class="link burgerMenu__contacts__phone">+7 (919) 766-75-16</a>
+						<div class="burgerMenu__contacts__address">
+								г.Москва, Центр Дизайна «Румянцево», 3-й этаж
+						</div>
+
+				</div>
+
+		</div>
+</header>
+
+<main>
+
+		<!-- components/catalogPage -->
+		<section class="catalogPageWrapper">
+				<div class="container">
+						<!-- ui/pageTitle -->
+						<div class="pageTitleWrapper pageTitleWrapper--negativeMargin pageTitleWrapper--page">
+
+								<div class="pageTitle">
+										<div class="pageTitle__breadcrumbs">
+												<a href="index.html" class="pageTitle__breadcrumbs-link">KuchenStein</a>
+												<a href="catalog-kitchens.html" class="pageTitle__breadcrumbs-link">Кухни</a>
+										</div>
+										<h1 class="pageTitle__h1">
+												Кухонный гарнитур в Скандинавский бульвар
+										</h1>
+								</div>
+
+						</div>
+				</div>
+		</section>
+
+		<!-- components/projectCard -->
+		<section class="projectCardWrapper">
+				<div class="container">
+
+						<div class="projectCard">
+
+								<!-- slider section -->
+								<div class="projectCard__sliderSection">
+										<img src="components/projectCard/img/mainImg.jpg"
+												 alt="project"
+												 class="projectCard__sliderSection-mainImg">
+
+										<div class="projectCard__sliderSection-slider">
+												<img src="assets/images/employee.jpg"
+														 alt="preview"
+														 class="projectCard__sliderSection-slider-slide">
+												<img src="components/projectCard/img/slides/1.jpg"
+														 alt="preview"
+														 class="projectCard__sliderSection-slider-slide">
+												<img src="components/projectCard/img/slides/1.jpg"
+														 alt="preview"
+														 class="projectCard__sliderSection-slider-slide">
+												<img src="components/projectCard/img/slides/1.jpg"
+														 alt="preview"
+														 class="projectCard__sliderSection-slider-slide">
+												<img src="components/projectCard/img/slides/1.jpg"
+														 alt="preview"
+														 class="projectCard__sliderSection-slider-slide">
+										</div>
+
+										<div class="projectCard__sliderSection-arrows">
+												<svg width="29" height="16" viewBox="0 0 29 16" fill="none"
+														 class="projectCard__sliderSection-arrows-prev" xmlns="http://www.w3.org/2000/svg">
+														<path d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z"
+																	fill="#333333"/>
+												</svg>
+
+												<svg width="29" height="16" viewBox="0 0 29 16" fill="none"
+														 class="projectCard__sliderSection-arrows-next" xmlns="http://www.w3.org/2000/svg">
+														<path d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z"
+																	fill="#CFAF6C"/>
+												</svg>
+										</div>
+								</div>
+
+								<!-- content section -->
+								<div class="projectCard__contentSection">
+
+										<!-- ui/sectionTitle -->
+										<div class="sectionTitle projectCard__contentSection-titleSection">
+												<div class="sectionTitle__main">
+														<div class="sectionTitle__main-suptitle">
+																Карточка проекта
+														</div>
+												</div>
+										</div>
+
+										<div class="projectCard__contentSection-info">
+												<p class="projectCard__contentSection-info-text">
+														Lorem ipsum dolor sit amet consectetur. Sed non adipiscing turpis dapibus venenatis odio
+														venenatis lectus. Volutpat at vulputate ligula pulvinar aliquam aliquet tellus. Cursus
+														imperdiet in amet semper et vel mauris. Risus convallis vitae morbi tortor.
+												</p>
+
+												<!-- grid -->
+												<div class="projectCard__contentSection-info-grid">
+
+														<!-- item -->
+														<div class="projectCard__contentSection-info-grid-item">
+																<div class="projectCard__contentSection-info-grid-item-key">
+																		Материалы
+																</div>
+																<div class="projectCard__contentSection-info-grid-item-value">
+																		ДСП, МДФ
+																</div>
+														</div>
+
+														<!-- item -->
+														<div class="projectCard__contentSection-info-grid-item">
+																<div class="projectCard__contentSection-info-grid-item-key">
+																		Срок изготовления
+																</div>
+																<div class="projectCard__contentSection-info-grid-item-value">
+																		30 раб. дней
+																</div>
+														</div>
+
+														<!-- item -->
+														<div class="projectCard__contentSection-info-grid-item">
+																<div class="projectCard__contentSection-info-grid-item-key">
+																		Фурнитура
+																</div>
+																<div class="projectCard__contentSection-info-grid-item-value">
+																		KuchenStein
+																</div>
+														</div>
+
+														<!-- item -->
+														<div class="projectCard__contentSection-info-grid-item">
+																<div class="projectCard__contentSection-info-grid-item-key">
+																		Стоимость изготовления
+																</div>
+																<div class="projectCard__contentSection-info-grid-item-value">
+																		от 80 000 руб. /пм
+																</div>
+														</div>
+
+														<!-- item -->
+														<div class="projectCard__contentSection-info-grid-item">
+																<div class="projectCard__contentSection-info-grid-item-key">
+																		Покрытие
+																</div>
+																<div class="projectCard__contentSection-info-grid-item-value">
+																		Oracle
+																</div>
+														</div>
+
+														<!-- item -->
+														<div class="projectCard__contentSection-info-grid-item">
+																<div class="projectCard__contentSection-info-grid-item-key">
+																		Доставка и установка
+																</div>
+																<div class="projectCard__contentSection-info-grid-item-value">
+																		Бесплатно
+																</div>
+														</div>
+												</div>
+
+												<!-- ui/linkArrow -->
+												<a class="link linkArrow linkArrow--big linkArrow--gold projectCard__contentSection-info-arrowLink"
+													 data-button-event="callModal">
+																<span class="linkArrow__text">
+																	заказать расчёт
+																</span>
+
+														<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																		<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																					fill="#333333"/>
+																	</svg>
+																</span>
+												</a>
+
+										</div>
+								</div>
+
+						</div>
+
+				</div>
+		</section>
+
+		<!-- components/feedback -->
+		<section class="feedbackWrapper">
+				<div class="container">
+						<div class="feedback">
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle feedback__title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Хотите также?
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Получите консультацию
+												</h2>
+										</div>
+								</div>
+
+								<!-- ui/form -->
+								<form action="#" class="form feedback__form" name="form--feedback">
+
+										<div class="form__inputSection">
+												<!-- phone number -->
+												<input type="text"
+															 class="form__inputSection-input"
+															 placeholder="+7 (___) ___-__-__"
+															 data-input-type="phone">
+
+												<!-- name -->
+												<input type="text"
+															 class="form__inputSection-input"
+															 placeholder="Ваше имя">
+										</div>
+
+										<div class="form__submitSection">
+												<button type="submit" class="button form__submitSection-btn">
+														<!-- ui/linkArrow -->
+														<a class="link linkArrow linkArrow--gold form__submitSection-btn-link">
+															<span class="linkArrow__text">
+																отправить заявку
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</button>
+
+												<div class="form__submitSection-text">
+														Нажимая “Отправить заявку”, Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+														сайта.
+												</div>
+										</div>
+								</form>
+						</div>
+				</div>
+		</section>
+
+		<!-- components/works -->
+		<section class="worksWrapper">
+				<div class="container">
+						<div class="works">
+
+								<!-- absolute text -->
+								<div class="absoluteText works__absoluteText">
+										Портфолио
+								</div>
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle sectionTitle--marginBottom works__title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Наши работы
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Другие проекты
+												</h2>
+										</div>
+
+										<!-- ui/linkArrow -->
+										<a href="#" class="link linkArrow linkArrow--gray aboutUs__contentSection-link">
+												<span class="linkArrow__text">
+													больше проектов
+												</span>
+
+												<span class="linkArrow__arrowWrapper">
+														<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																 fill="none"
+																 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+														</svg>
+												</span>
+										</a>
+								</div>
+
+								<!-- ui/catalogGrid -->
+								<div class="works__grid catalogGrid">
+
+										<!-- ui/carditem -->
+										<div class="carditem works__grid-card">
+
+												<!-- ui/imgWrapper -->
+												<div class="imgWrapper works__grid-card-imgWrapper">
+														<img src="assets/images/project.jpg"
+																 alt="project"
+																 class="carditem__img">
+												</div>
+
+												<div class="carditem__info">
+														<div class="carditem__info-text">
+																<span class="goldText">Кухонный гарнитур </span>в Скандинавский бульвар
+														</div>
+
+														<!-- ui/linkArrow -->
+														<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</div>
+										</div>
+
+										<!-- ui/carditem -->
+										<div class="carditem works__grid-card">
+
+												<!-- ui/imgWrapper -->
+												<div class="imgWrapper works__grid-card-imgWrapper">
+														<img src="assets/images/project.jpg"
+																 alt="project"
+																 class="carditem__img">
+												</div>
+
+												<div class="carditem__info">
+														<div class="carditem__info-text">
+																<span class="goldText">Кухонный гарнитур </span>в Скандинавский бульвар
+														</div>
+
+														<!-- ui/linkArrow -->
+														<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</div>
+										</div>
+
+										<!-- ui/carditem -->
+										<div class="carditem works__grid-card">
+
+												<!-- ui/imgWrapper -->
+												<div class="imgWrapper works__grid-card-imgWrapper">
+														<img src="assets/images/project.jpg"
+																 alt="project"
+																 class="carditem__img">
+												</div>
+
+												<div class="carditem__info">
+														<div class="carditem__info-text">
+																<span class="goldText">Кухонный гарнитур </span>в Скандинавский бульвар
+														</div>
+
+														<!-- ui/linkArrow -->
+														<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</div>
+										</div>
+
+										<!-- ui/carditem -->
+										<div class="carditem works__grid-card">
+
+												<!-- ui/imgWrapper -->
+												<div class="imgWrapper works__grid-card-imgWrapper">
+														<img src="assets/images/project.jpg"
+																 alt="project"
+																 class="carditem__img">
+												</div>
+
+												<div class="carditem__info">
+														<div class="carditem__info-text">
+																<span class="goldText">Кухонный гарнитур </span>в Скандинавский бульвар
+														</div>
+
+														<!-- ui/linkArrow -->
+														<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</div>
+										</div>
+
+										<!-- ui/carditem -->
+										<div class="carditem works__grid-card">
+
+												<!-- ui/imgWrapper -->
+												<div class="imgWrapper works__grid-card-imgWrapper">
+														<img src="assets/images/project.jpg"
+																 alt="project"
+																 class="carditem__img">
+												</div>
+
+												<div class="carditem__info">
+														<div class="carditem__info-text">
+																<span class="goldText">Кухонный гарнитур </span>в Скандинавский бульвар
+														</div>
+
+														<!-- ui/linkArrow -->
+														<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</div>
+										</div>
+
+										<!-- ui/carditem -->
+										<div class="carditem works__grid-card">
+
+												<!-- ui/imgWrapper -->
+												<div class="imgWrapper works__grid-card-imgWrapper">
+														<img src="assets/images/project.jpg"
+																 alt="project"
+																 class="carditem__img">
+												</div>
+
+												<div class="carditem__info">
+														<div class="carditem__info-text">
+																<span class="goldText">Кухонный гарнитур </span>в Скандинавский бульвар
+														</div>
+
+														<!-- ui/linkArrow -->
+														<a href="#" class="link linkArrow linkArrow--gray carditem__info-link">
+															<span class="linkArrow__text">
+																детали
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</section>
+
+</main>
+
+<footer class="footerWrapper">
+		<div class="container">
+				<div class="footer">
+
+						<div class="footer__block footer__contacts">
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle sectionTitle--small sectionTitle--marginBottom footer__contacts-title footer__block-title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Контакты
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Мы на связи 24/7
+												</h2>
+										</div>
+								</div>
+
+								<div class="footer__contacts-info">
+										<div class="footer__contacts-info-block">
+												<div class="footer__contacts-info-block-key">
+														Отдел продаж
+												</div>
+												<a href="tel:+7 (919) 766-75-16" class="link link--white footer__contacts-info-block-value">
+														+7 (919) 766-75-16
+												</a>
+										</div>
+
+										<div class="footer__contacts-info-block">
+												<div class="footer__contacts-info-block-key">
+														Контактный E-Mail
+												</div>
+												<a href="mailto:info@kuchenstein.ru" class="link link--white footer__contacts-info-block-value">
+														info@kuchenstein.ru
+												</a>
+										</div>
+								</div>
+
+								<div class="footer__contacts-text">
+										35-й километр Киевского шоссе, Центр Дизайна Румянцево, корпус В, 3-й этаж
+								</div>
+
+						</div>
+
+
+						<div class="footer__block footer__formSection">
+
+								<!-- ui/sectionTitle -->
+								<div class="sectionTitle sectionTitle--marginBottom footer__form-title footer__block-title">
+										<div class="sectionTitle__main">
+												<div class="sectionTitle__main-suptitle">
+														Сложности с выбором?
+												</div>
+												<h2 class="sectionTitle__main-title">
+														Получите консультацию
+												</h2>
+										</div>
+								</div>
+
+								<!-- ui/form -->
+								<form action="#" class="form footer__formSection-form" name="form--footer">
+
+										<div class="form__inputSection">
+												<!-- phone number -->
+												<input type="text"
+															 class="form__inputSection-input"
+															 placeholder="+7 (___) ___-__-__"
+															 data-input-type="phone">
+
+												<!-- name -->
+												<input type="text"
+															 class="form__inputSection-input"
+															 placeholder="Ваше имя">
+										</div>
+
+										<div class="form__submitSection">
+												<button type="submit" class="button form__submitSection-btn">
+														<!-- ui/linkArrow -->
+														<a class="link linkArrow linkArrow--gold form__submitSection-btn-link">
+															<span class="linkArrow__text">
+																отправить заявку
+															</span>
+
+																<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+														</a>
+												</button>
+
+												<div class="form__submitSection-text">
+														Нажимая “Отправить заявку”, Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+														сайта.
+												</div>
+										</div>
+								</form>
+
+						</div>
+				</div>
+
+				<div class="footerBottom">
+						<img src="components/footer/img/logo.svg"
+								 alt="kuchenstein_logo"
+								 class="footerBottom__logo">
+
+						<div class="footerBottom__info">
+								<nav class="footerBottom__info-nav">
+										<a href="#" class="link footerBottom__info-nav-link">Кухни</a>
+										<a href="#" class="link footerBottom__info-nav-link">Шкафы</a>
+										<a href="#" class="link footerBottom__info-nav-link">Столешницы</a>
+										<a href="#" class="link footerBottom__info-nav-link">Техника</a>
+										<a href="#" class="link footerBottom__info-nav-link">Выполненные проекты</a>
+										<a href="#" class="link footerBottom__info-nav-link">О компании</a>
+										<a href="#" class="link footerBottom__info-nav-link">Контакты</a>
+								</nav>
+
+								<button class="button button--white upperHeader__info-requestBtn"
+												data-button-event="callModal">
+										Заказать звонок
+								</button>
+						</div>
+				</div>
+		</div>
+</footer>
+
+<!-- components/callModal -->
+<div class="callModalBg callModalBg--Hidden">
+		<div class="callModal">
+				<img src="components/callModal/img/closeIcon.svg"
+						 alt="closeIcon"
+						 class="callModal__closeIcon">
+
+				<!-- ui/sectionTitle -->
+				<div class="sectionTitle sectionTitle--small sectionTitle--marginBottom callModal__title">
+						<div class="sectionTitle__main">
+								<div class="sectionTitle__main-suptitle">
+										Обратный звонок
+								</div>
+								<h2 class="sectionTitle__main-title">
+										Оставьте заявку и мы вам перезвоним!
+								</h2>
+						</div>
+				</div>
+
+				<!-- ui/form -->
+				<form action="#" class="form callModal__form" name="form--callModal">
+
+						<div class="form__inputSection">
+								<!-- phone number -->
+								<input type="text"
+											 class="form__inputSection-input"
+											 placeholder="+7 (___) ___-__-__"
+											 data-input-type="phone">
+
+								<!-- name -->
+								<input type="text"
+											 class="form__inputSection-input"
+											 placeholder="Ваше имя">
+						</div>
+
+						<div class="form__submitSection">
+								<button type="submit" class="button form__submitSection-btn">
+										<!-- ui/linkArrow -->
+										<a class="link linkArrow linkArrow--gold form__submitSection-btn-link">
+															<span class="linkArrow__text">
+																отправить заявку
+															</span>
+
+												<span class="linkArrow__arrowWrapper">
+																	<svg class="linkArrow__arrowWrapper-svg" width="37" height="13" viewBox="0 0 37 13"
+																			 fill="none"
+																			 xmlns="http://www.w3.org/2000/svg">
+																	<path d="M36.5303 7.03033C36.8232 6.73744 36.8232 6.26256 36.5303 5.96967L31.7574 1.1967C31.4645 0.903806 30.9896 0.903806 30.6967 1.1967C30.4038 1.48959 30.4038 1.96447 30.6967 2.25736L34.9393 6.5L30.6967 10.7426C30.4038 11.0355 30.4038 11.5104 30.6967 11.8033C30.9896 12.0962 31.4645 12.0962 31.7574 11.8033L36.5303 7.03033ZM0 7.25H36V5.75H0V7.25Z"
+																				fill="#333333"/>
+																	</svg>
+																</span>
+										</a>
+								</button>
+
+								<div class="form__submitSection-text">
+										Нажимая “Отправить заявку”, Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+										сайта.
+								</div>
+						</div>
+				</form>
+		</div>
+</div>
+
+<!-- jQuery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+				integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+				crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- SlickSlider CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+				integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+				crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+				integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+				crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Bootstrap CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+				crossorigin="anonymous"></script>
+
+<!-- Global script -->
+<script src="assets/js/index.js"></script>
+
+<!-- Component scripts -->
+<script src="components/header/header.js"></script>
+<script src="components/callModal/callModal.js"></script>
+<script src="components/aboutSlider/aboutSlider.js"></script>
+<script src="components/projectCard/projectCard.js"></script>
+
+<!-- UI scripts -->
+<script src="ui/form/form.js"></script>
+</body>
+</html>

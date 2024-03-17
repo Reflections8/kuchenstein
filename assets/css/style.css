@@ -1,0 +1,140 @@
+/* COMPONENTS */
+@import "../../components/upperHeader/upperHeader.css";
+@import "../../components/header/header.css";
+@import "../../components/footer/footer.css";
+@import "../../components/intro/intro.css";
+@import "../../components/aboutUs/aboutUs.css";
+@import "../../components/works/works.css";
+@import "../../components/feedback/feedback.css";
+@import "../../components/howTo/howTo.css";
+@import "../../components/benefits/benefits.css";
+@import "../../components/reviews/reviews.css";
+@import "../../components/steps/steps.css";
+@import "../../components/faq/faq.css";
+@import "../../components/catalogPage/catalogPage.css";
+@import "../../components/merchantsGrid/merchantsGrid.css";
+@import "../../components/aboutSlider/aboutSlider.css";
+@import "../../components/projectCard/projectCard.css";
+@import "../../components/yandexMap/yandexMap.css";
+
+/* UI */
+@import "../../ui/imgWrapper/imgWrapper.css";
+@import "../../ui/sectionTitle/sectionTitle.css";
+@import "../../ui/linkArrow/linkArrow.css";
+@import "../../ui/carditem/carditem.css";
+@import "../../ui/form/form.css";
+@import "../../ui/pageTitle/pageTitle.css";
+@import "../../ui/filters/filters.css";
+@import "../../ui/catalogGrid/catalogGrid.css";
+@import "../../ui/pagination/pagination.css";
+@import "../../ui/burgerMenu/burgerMenu.css";
+
+/* MODAL */
+@import "../../components/callModal/callModal.css";
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  color: var(--color-black);
+  background-color: #F7F7F7;
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+.button {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.button--white {
+  background: #ffffff;
+}
+
+.button--white:hover {
+  background-color: #C9C9C9;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.link {
+  transition: all .2s ease-in-out;
+}
+
+.link--white {
+  color: #ffffff;
+}
+
+.link--white:hover {
+  color: #BCBCBC;
+}
+
+[data-button-event="callModal"] {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.goldText {
+  color: #CFAF6C;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.absoluteText {
+  z-index: -1;
+  position: absolute;
+  font-size: 60px;
+  font-weight: 700;
+  color: #ECECEC;
+}
+
+.d-none {
+  display: none;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .absoluteText {
+    display: none;
+  }
+
+}

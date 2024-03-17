@@ -1,0 +1,72 @@
+.faq__accordion {
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.accordion-item {
+  border-bottom: none;
+  background-color: transparent;
+}
+
+.accordion-button {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 4px;
+  background-color: transparent;
+  padding: 2px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.accordion-button:hover {
+  color: #CFAF6C;
+}
+
+.accordion-button.collapsed:hover:after {
+  transform: rotate(-30deg);
+}
+
+.accordion-button::after {
+  margin: 0;
+  background-image: url("img/arrow.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("img/arrow.svg");
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: unset;
+  box-shadow: none;
+  color: #CFAF6C;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px) {
+  .faq__accordion {
+    padding-left: 20px;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}
