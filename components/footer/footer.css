@@ -9,6 +9,10 @@
   padding: 80px 0;
 }
 
+.form.footer__formSection-form {
+  gap: 12px;
+}
+
 .footer.footer--page {
   padding: 0;
 }
@@ -40,6 +44,7 @@
 
 .footer__block-title .sectionTitle__main-title {
   color: white;
+  font-size: 20px;
 }
 
 .footer__contacts-info {
@@ -74,6 +79,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.footerBottom__logo {
+  max-width: 160px;
+  width: 100%;
+  filter: brightness(10);
 }
 
 .footerBottom__info {

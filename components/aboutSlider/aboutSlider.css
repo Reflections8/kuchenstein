@@ -20,11 +20,6 @@
   margin-right: 12px;
 }
 
-.aboutSlider .slick-list {
-  overflow: visible !important;
-}
-
-
 @media screen and (max-width: 1200px) {
   .aboutSlider__slider .imgWrapper:after {
     display: none;

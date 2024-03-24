@@ -24,17 +24,15 @@
   color: #CFAF6C;
 }
 
-.accordion-button.collapsed:hover:after {
-  transform: rotate(-30deg);
-}
-
 .accordion-button::after {
   margin: 0;
   background-image: url("img/arrow.svg");
+  transform: scale(0.3);
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("img/arrow.svg");
+  transform: scale(0.3);
 }
 
 .accordion-button:not(.collapsed) {

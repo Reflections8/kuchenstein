@@ -45,6 +45,7 @@
   font-weight: 900;
   -webkit-text-stroke: 1px #CFAF6C;
   color: transparent;
+  max-width: 54px;
 }
 
 .steps__content-item-info-text {

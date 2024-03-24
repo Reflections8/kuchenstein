@@ -17,6 +17,10 @@
   gap: 4px;
 }
 
+.pageTitle__breadcrumbs {
+  display: none;
+}
+
 .pageTitle__breadcrumbs-link {
   color: #909090;
   font-size: 12px;
