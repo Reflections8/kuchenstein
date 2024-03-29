@@ -1,6 +1,7 @@
 .pageTitleWrapper {
   margin-top: -20px;
   margin-bottom: 80px;
+  display: none;
 }
 
 .pageTitleWrapper--negativeMargin {
